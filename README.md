@@ -15,11 +15,18 @@ Try out the sample application on the Play Store.
 
 _(For a working implementation of this project see the demo/ folder.)_
 
-Add the dependency to your build.gradle.
-
+1-)Add it in your root build.gradle at the end of repositories:
+```
+allprojects {
+  repositories {
+    maven { url 'https://jitpack.io' }
+  }
+}
+```
+2-)Add the dependency:
 ```
 dependencies {
-    compile 'com.ogaclejapan.arclayout:library:1.1.0@aar'
+    implementation 'com.github.KgTeknolojiOSS:ArcLayout:2.0.0'
 }
 ```
 
